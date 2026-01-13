@@ -6,7 +6,7 @@ import gsap from 'gsap';
 import clsx from 'clsx';
 import Button from '../components/ui/Button';
 
-const FILTERS = ['All', 'React', 'Next.js', 'TypeScript', 'Three.js'];
+const FILTERS = ['All', 'React', 'Angular', 'TypeScript', 'ExpressJs'];
 
 export default function Projects() {
     const [activeFilter, setActiveFilter] = useState('All');
