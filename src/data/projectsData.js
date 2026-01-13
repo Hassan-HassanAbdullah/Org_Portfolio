@@ -23,7 +23,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Netflix UI Clone",
+    title: "Netflix HomePage UI",
     description: "Netflix homepage clone with responsive layout and modern UI.",
     techStack: ["HTML", "CSS"],
     img: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=1080",
@@ -34,51 +34,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "SkillSider Website Clone",
-    description: "Educational platform homepage clone with structured content sections.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    img: "https://images.unsplash.com/photo-1584697964192-69c6c2f4c0b6?auto=format&fit=crop&q=80&w=1080",
-    liveLink: "https://hassan-hassanabdullah.github.io/Skillsider_Clone/",
-    githubLink: "https://github.com/hassan-hassanabdullah",
-    overview:
-      "Practiced real-world UI cloning to improve grid systems, spacing, and content alignment."
-  },
-  {
-    id: 5,
-    title: "Amazon Homepage Clone",
-    description: "Amazon homepage clone showcasing e-commerce UI structure.",
-    techStack: ["HTML", "CSS"],
-    img: "https://images.unsplash.com/photo-1515169067865-5387ec356754?auto=format&fit=crop&q=80&w=1080",
-    liveLink: "https://hassan-hassanabdullah.github.io/Amazon_Clone/",
-    githubLink: "https://github.com/hassan-hassanabdullah",
-    overview:
-      "Recreated Amazon’s homepage to understand complex layouts, product cards, and navigation bars."
-  },
-  {
-    id: 6,
-    title: "Cartoon Theme Website",
-    description: "A fun and colorful cartoon-style website with playful design.",
-    techStack: ["HTML", "CSS"],
-    img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=1080",
-    liveLink: "https://hassan-hassanabdullah.github.io/Cartoon_website/",
-    githubLink: "https://github.com/hassan-hassanabdullah",
-    overview:
-      "Experimented with colors, typography, and layout to build a playful themed website."
-  },
-  {
-    id: 7,
-    title: "Calculator Web App",
-    description: "A simple and functional calculator built using JavaScript.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1080",
-    liveLink: "https://hassan-hassanabdullah.github.io/Calculater/",
-    githubLink: "https://github.com/hassan-hassanabdullah",
-    overview:
-      "Implemented calculator logic using JavaScript with clean UI and button interactions."
-  },
-  {
-    id: 8,
-    title: "Bootstrap Portfolio Website",
+    title: "Portfolio Website Home page UI",
     description: "Personal portfolio website built using Bootstrap.",
     techStack: ["HTML", "CSS", "Bootstrap"],
     img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1080",
@@ -88,8 +44,8 @@ export const projects = [
       "Created a responsive personal portfolio using Bootstrap grid system and components."
   },
   {
-    id: 9,
-    title: "Agency Website",
+    id: 5,
+    title: "Agency Website HomePage UI",
     description: "A modern agency website with smooth animations.",
     techStack: ["HTML", "CSS", "GSAP", "TailwindCSS"],
     img: "https://images.unsplash.com/photo-1621504450168-38f647319c43?auto=format&fit=crop&q=80&w=1080",
