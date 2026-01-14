@@ -14,7 +14,7 @@ export const projects = [
     title: "Agency Website",
     description: "A professional single-page website for a creative agency with engaging sections and responsive design.",
     techStack: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design"],
-    img: "https://agency-web-eight.vercel.app/og-image.png",
+    img: "/agencyFullpage.png",
     liveLink: "https://agency-web-eight.vercel.app/",
     githubLink: "https://github.com/yourusername/agency-website",
     overview: "This agency website includes multiple sections such as About, Services, Portfolio, and Contact. It is fully responsive, includes smooth scrolling between sections, interactive hover effects on portfolio items, and uses Bootstrap for layout consistency. The project emphasizes clean UI/UX design and a professional presentation suitable for agencies or creative studios."

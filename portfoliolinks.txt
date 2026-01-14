@@ -1,18 +1,11 @@
 long tail keyword with less competetion and search result
 
 
-
-
-
-https://hassan-hassanabdullah.github.io/Company_web/index.html
-https://hassan-hassanabdullah.github.io/TooGood_clone/
-https://hassan-hassanabdullah.github.io/Netflix_Clone/
-https://hassan-hassanabdullah.github.io/Skillsider_Clone/
-https://hassan-hassanabdullah.github.io/Amazon_Clone/
-https://hassan-hassanabdullah.github.io/Cartoon_website/
-https://hassan-hassanabdullah.github.io/Calculater/
-
-https://hassan-hassanabdullah.github.io/Bootstrap_PortFolio/
-https://hassan-hassanabdullah.github.io/Agency_web/
+https://too-good-landing-page-ui.vercel.app/
+https://agency-web-eight.vercel.app/
+https://streaming-platform-ui-mu.vercel.app/
+https://port-folio-leanding-page.vercel.app/
+https://company-web-ashen.vercel.app/
+https://recipegenui.netlify.app/
 
 
