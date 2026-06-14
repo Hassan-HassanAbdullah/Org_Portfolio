@@ -8,7 +8,7 @@ export default function ProjectCard({ project, className }) {
         <Link
             to={`/projects/${project.id}`}
             className={clsx(
-                "group relative bg-zinc-900/40 backdrop-blur-xl rounded-3xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_50px_rgba(0,255,163,0.05)] flex flex-col h-full",
+                "group relative bg-zinc-900/50 backdrop-blur-xl rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_50px_rgb(var(--color-primary-rgb)/0.05)] flex flex-col h-full",
                 className
             )}
         >
@@ -16,7 +16,7 @@ export default function ProjectCard({ project, className }) {
             <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
             {/* Image Container */}
-            <div className="relative h-64 overflow-hidden shrink-0">
+            <div className="relative aspect-[16/11] overflow-hidden shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/90 to-transparent z-10" />
                 <img
                     src={project.img}
@@ -25,16 +25,16 @@ export default function ProjectCard({ project, className }) {
                 />
 
                 {/* Floating Action Badge */}
-                <div className="absolute top-4 right-4 w-12 h-12 bg-zinc-950/50 backdrop-blur-md rounded-full flex items-center justify-center text-white border border-white/10 opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-primary hover:text-black z-20 hover:border-primary">
+                <div className="absolute top-4 right-4 w-11 h-11 bg-zinc-950/60 backdrop-blur-md rounded-full flex items-center justify-center text-white border border-white/10 opacity-100 md:opacity-0 md:-translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-primary hover:text-black z-20 hover:border-primary">
                     <ArrowUpRight size={20} />
                 </div>
             </div>
 
-            <div className="p-8 flex flex-col flex-grow relative z-10">
-                <h3 className="text-2xl font-bold text-white mb-3 font-heading group-hover:text-primary transition-colors flex items-center gap-3">
+            <div className="p-5 sm:p-6 flex flex-col flex-grow relative z-10">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 font-heading group-hover:text-primary transition-colors flex items-center gap-3">
                     {project.title}
                 </h3>
-                <p className="text-zinc-400 mb-6 line-clamp-3 text-base font-light flex-grow leading-relaxed">
+                <p className="text-zinc-400 mb-6 line-clamp-3 text-sm sm:text-base font-light flex-grow leading-relaxed">
                     {project.description}
                 </p>
 

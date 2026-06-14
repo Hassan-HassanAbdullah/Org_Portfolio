@@ -1,15 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #00ffa3;
-  --color-dark: #050505;
+  --color-primary-rgb: 199 255 0;
+  --color-secondary-rgb: 255 255 255;
+  --color-dark-rgb: 5 5 5;
+  --color-dark-lighter-rgb: 10 10 10;
+  --color-glass-rgb: 255 255 255;
+  --color-glass-border-rgb: 255 255 255;
+  --color-primary: rgb(var(--color-primary-rgb));
+  --color-secondary: rgb(var(--color-secondary-rgb));
+  --color-dark: rgb(var(--color-dark-rgb));
+  --color-dark-lighter: rgb(var(--color-dark-lighter-rgb));
+  --color-about-muted: #3f3f46;
+  --color-about-active: rgb(var(--color-primary-rgb));
   --font-heading: 'Space Grotesk', sans-serif;
   --font-sans: 'Outfit', sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-[#050505] text-white antialiased font-sans selection:bg-primary/30 selection:text-primary;
+    @apply bg-dark text-white antialiased font-sans selection:bg-primary/30 selection:text-primary;
     overflow-x: hidden;
   }
 
@@ -25,13 +35,13 @@
 
 @layer utilities {
   .text-glow {
-    text-shadow: 0 0 20px rgba(0, 255, 163, 0.3);
+    text-shadow: 0 0 20px rgb(var(--color-primary-rgb) / 0.3);
   }
 
   .glass-card {
-    background: rgba(15, 15, 15, 0.6);
+    background: rgb(var(--color-dark-lighter-rgb) / 0.6);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgb(var(--color-glass-border-rgb) / 0.05);
   }
 
   .hover-glow {
@@ -39,8 +49,25 @@
   }
 
   .hover-glow:hover {
-    box-shadow: 0 0 30px rgba(0, 255, 163, 0.15);
-    border-color: rgba(0, 255, 163, 0.3);
+    box-shadow: 0 0 30px rgb(var(--color-primary-rgb) / 0.15);
+    border-color: rgb(var(--color-primary-rgb) / 0.3);
+  }
+
+  .primary-glow-sm {
+    box-shadow: 0 0 15px rgb(var(--color-primary-rgb) / 0.32);
+  }
+
+  .primary-glow-md {
+    box-shadow: 0 0 24px rgb(var(--color-primary-rgb) / 0.28);
+  }
+
+  .primary-glow-line {
+    box-shadow: 0 0 15px rgb(var(--color-primary-rgb) / 0.55);
+  }
+
+  .about-word {
+    color: var(--color-about-muted);
+    transition: color 0.15s linear, text-shadow 0.15s linear;
   }
 
   /* Animated Text Gradient */

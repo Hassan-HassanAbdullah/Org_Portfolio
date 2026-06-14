@@ -23,7 +23,7 @@ export default function ProjectDetail() {
     }
 
     return (
-        <article className="min-h-screen pt-32 pb-20 relative overflow-hidden">
+        <article className="min-h-screen pt-28 md:pt-32 pb-20 relative overflow-hidden">
 
             {/* Background Glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[500px] bg-primary/10 blur-[120px] rounded-full pointer-events-none -z-10" />
@@ -38,7 +38,7 @@ export default function ProjectDetail() {
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-heading tracking-tight">{project.title}</h1>
                     <div className="flex flex-wrap gap-3">
                         {project.techStack.map(tech => (
-                            <span key={tech} className="bg-zinc-900/50 text-primary border border-primary/20 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">
+                            <span key={tech} className="bg-zinc-900/50 text-primary border border-primary/20 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase backdrop-blur-md">
                                 {tech}
                             </span>
                         ))}
@@ -46,9 +46,9 @@ export default function ProjectDetail() {
                 </div>
 
                 {/* Hero Image Showcase */}
-                <div className="relative w-full aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl mb-16 group">
+                <div className="relative w-full aspect-[16/11] md:aspect-video rounded-lg overflow-hidden border border-white/10 shadow-2xl mb-10 md:mb-16 group">
                     <div className="absolute inset-0 bg-zinc-900/20 backdrop-blur-sm z-10 hidden" /> {/* Placeholder for loading state if needed */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60 z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent opacity-60 z-10" />
 
                     {/* Glossy Reflection */}
                     <div className="absolute top-0 right-0 w-2/3 h-full bg-gradient-to-l from-white/5 to-transparent skew-x-12 opacity-30 pointer-events-none z-20" />
@@ -60,40 +60,40 @@ export default function ProjectDetail() {
                     />
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
                     {/* Main Content */}
                     <div className="lg:col-span-2 space-y-12">
                         {/* Description Card */}
-                        <section className="bg-zinc-900/30 backdrop-blur-xl border border-white/5 p-8 md:p-10 rounded-3xl hover:border-primary/20 transition-all duration-300">
+                        <section className="bg-zinc-900/30 backdrop-blur-xl border border-white/10 p-5 md:p-10 rounded-lg hover:border-primary/20 transition-all duration-300">
                             <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 font-heading flex items-center gap-3">
                                 <span className="w-2 h-8 bg-primary rounded-full"></span>
                                 Overview
                             </h2>
-                            <p className="text-zinc-300 leading-loose text-lg font-light">
+                            <p className="text-zinc-300 leading-8 md:leading-loose text-base md:text-lg font-light">
                                 {project.overview}
                             </p>
                         </section>
 
                         {/* Features Card */}
-                        <section className="bg-zinc-900/30 backdrop-blur-xl border border-white/5 p-8 md:p-10 rounded-3xl hover:border-primary/20 transition-all duration-300">
+                        <section className="bg-zinc-900/30 backdrop-blur-xl border border-white/10 p-5 md:p-10 rounded-lg hover:border-primary/20 transition-all duration-300">
                             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 font-heading flex items-center gap-3">
                                 <span className="w-2 h-8 bg-primary rounded-full"></span>
                                 Key Features
                             </h2>
                             <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <li className="flex items-start gap-4 p-4 rounded-2xl bg-black/20 border border-white/5">
+                                <li className="flex items-start gap-4 p-4 rounded-lg bg-black/20 border border-white/10">
                                     <CheckCircle2 className="text-primary shrink-0 mt-1" size={24} />
                                     <span className="text-zinc-300">High-performance rendering with optimized assets</span>
                                 </li>
-                                <li className="flex items-start gap-4 p-4 rounded-2xl bg-black/20 border border-white/5">
+                                <li className="flex items-start gap-4 p-4 rounded-lg bg-black/20 border border-white/10">
                                     <CheckCircle2 className="text-primary shrink-0 mt-1" size={24} />
                                     <span className="text-zinc-300">Fully responsive layout for all devices</span>
                                 </li>
-                                <li className="flex items-start gap-4 p-4 rounded-2xl bg-black/20 border border-white/5">
+                                <li className="flex items-start gap-4 p-4 rounded-lg bg-black/20 border border-white/10">
                                     <CheckCircle2 className="text-primary shrink-0 mt-1" size={24} />
                                     <span className="text-zinc-300">Modern UI/UX with smooth transitions</span>
                                 </li>
-                                <li className="flex items-start gap-4 p-4 rounded-2xl bg-black/20 border border-white/5">
+                                <li className="flex items-start gap-4 p-4 rounded-lg bg-black/20 border border-white/10">
                                     <CheckCircle2 className="text-primary shrink-0 mt-1" size={24} />
                                     <span className="text-zinc-300">Secure and scalable architecture</span>
                                 </li>
@@ -103,7 +103,7 @@ export default function ProjectDetail() {
 
                     {/* Sidebar */}
                     <aside className="space-y-8">
-                        <div className="bg-zinc-900/30 backdrop-blur-xl border border-white/5 rounded-3xl p-8 sticky top-32 hover:border-primary/20 transition-all duration-300">
+                        <div className="bg-zinc-900/30 backdrop-blur-xl border border-white/10 rounded-lg p-5 md:p-8 lg:sticky lg:top-32 hover:border-primary/20 transition-all duration-300">
                             <h3 className="text-xl font-bold text-white mb-8 font-heading">Project Info</h3>
 
                             <div className="space-y-6">
@@ -122,7 +122,7 @@ export default function ProjectDetail() {
                                     href={project.liveLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-center w-full py-4 bg-primary hover:bg-white text-black rounded-xl font-bold transition-all shadow-[0_0_20px_rgba(0,255,163,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]"
+                                    className="flex items-center justify-center w-full py-4 bg-primary hover:bg-white text-dark rounded-lg font-bold transition-all primary-glow-md hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]"
                                 >
                                     <ExternalLink size={20} className="mr-2" /> Live Demo
                                 </a>
@@ -130,7 +130,7 @@ export default function ProjectDetail() {
                                     href={project.githubLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-center w-full py-4 bg-zinc-800 hover:bg-zinc-700 text-white rounded-xl font-bold transition-all border border-white/5"
+                                    className="flex items-center justify-center w-full py-4 bg-zinc-800 hover:bg-zinc-700 text-white rounded-lg font-bold transition-all border border-white/10"
                                 >
                                     <Github size={20} className="mr-2" /> View Source
                                 </a>
